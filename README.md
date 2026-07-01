@@ -46,8 +46,8 @@ FOCA addresses this challenge by teaching robots to reason about **future intera
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
+git clone https://github.com/cair-vinuni/FOCA
+cd FOCA
 ```
 
 ### 2. Install core dependencies

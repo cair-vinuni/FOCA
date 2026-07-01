@@ -1,4 +1,4 @@
-# FOCA: Future-Oriented Conditioning for Data-Efficient Vision-Language-Action Adaptation (ICML 2026)
+# FOCA: Future-Oriented Conditioning for Data-Efficient Vision-Language-Action Adaptation — [ICML 2026](https://icml.cc/)
 
 <p align="center">
   <picture>
@@ -6,6 +6,8 @@
     <img src="assets/ICML-logo.svg" alt="ICML 2026" width="220">
   </picture>
 </p>
+
+
 
 <p align="center">
   <a href="https://focavla.github.io/"><img src="https://img.shields.io/badge/🌐%20Project%20Page-FOCA-green" alt="Website" height="32"></a>

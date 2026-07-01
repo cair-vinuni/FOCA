@@ -7,9 +7,11 @@
   </picture>
 </p>
 
-[![Website](https://img.shields.io/badge/🌐%20Project%20Page-FOCA-green)](https://focavla.github.io/)
-[![ArXiv](https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg)](https://arxiv.org/abs/2606.20867)
-[![Hugging Face](https://img.shields.io/badge/🤗%20Model-HuggingFace-blue)](https://huggingface.co/collections/vrfai/foca-models)
+<p align="center">
+  <a href="https://focavla.github.io/"><img src="https://img.shields.io/badge/🌐%20Project%20Page-FOCA-green" alt="Website" height="32"></a>
+  <a href="https://arxiv.org/abs/2606.20867"><img src="https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg" alt="ArXiv" height="32"></a>
+  <a href="https://huggingface.co/collections/vrfai/foca-models"><img src="https://img.shields.io/badge/🤗%20Model-HuggingFace-blue" alt="Hugging Face" height="32"></a>
+</p>
 
 
 ## Overview

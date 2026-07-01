@@ -135,7 +135,19 @@ The constants file defines the camera views, state/action dimensions, and task m
 cp lerobot/common/constants_libero.py lerobot/common/constants.py
 ```
 
-**Step 4 — Configure the FOCA components.**
+**Step 4 — Create `modality_map.json` for Object-of-Interest Masks.**
+Before running the training scripts, navigate to the `./meta` directory of the corresponding dataset and create a file named `modality_map.json`. This file maps the original object-of-interest mask keys for each camera view to new keys, where each new key is the corresponding main observation key with the suffix `_mask`. 
+
+For example, in the LIBERO dataset, the `modality_map.json` file should look like:
+
+```bash
+{
+  "observation.images.object_of_interest_wrist_mask":"observation.images.wrist_image_mask",
+  "observation.images.object_of_interest_mask":"observation.images.image_mask"
+}
+```
+
+**Step 5 — Configure the FOCA components.**
 These flags toggle the FOCA conditioning modules:
 
 | Flag | Values | Meaning |
@@ -145,7 +157,7 @@ These flags toggle the FOCA conditioning modules:
 | `future_obj` | `all` / `none` | `all` uses the full future-object view (including background); `none` disables it. |
 | `use_slot_att` | `none` / ... | Slot-attention variant for object grouping; `none` disables it. |
 
-**Step 5 — Launch training.**
+**Step 6 — Launch training.**
 
 ```bash
 use_explicit=true

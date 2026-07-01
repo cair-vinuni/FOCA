@@ -1,0 +1,153 @@
+{
+    "dataset": {
+      "root": null,
+      "repo_id": "ducido/calvin_task_D_D_scale_100_lerobo_format",
+      "episodes": null,
+      "revision": null,
+      "video_backend": "torchcodec",
+      "image_transforms": {
+        "enable": true,
+        "image_tfs": {
+          "hue": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "hue": [-0.05, 0.05]
+            },
+            "weight": 1
+          },
+          "contrast": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "contrast": [0.8, 1.2]
+            },
+            "weight": 1
+          },
+          "sharpness": {
+            "type": "SharpnessJitter",
+            "kwargs": {
+              "sharpness": [0.5, 1.5]
+            },
+            "weight": 1
+          },
+          "brightness": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "brightness": [0.8, 1.2]
+            },
+            "weight": 1
+          },
+          "saturation": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "saturation": [0.5, 1.5]
+            },
+            "weight": 1
+          },
+          "crop_resize": {
+            "type": "RandomResizedCrop",
+            "kwargs": {
+              "size": [256, 256],
+              "ratio": [1, 1],
+              "scale": [0.9, 0.95]
+            },
+            "weight": 1
+          },
+          "rotate": {
+            "type": "RandomRotate",
+            "kwargs": {
+              "degrees": [-5, 5]
+            },
+            "weight": 1
+          }
+        },
+        "wrist_tfs": {
+          "hue": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "hue": [-0.05, 0.05]
+            },
+            "weight": 1
+          },
+          "contrast": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "contrast": [0.8, 1.2]
+            },
+            "weight": 1
+          },
+          "sharpness": {
+            "type": "SharpnessJitter",
+            "kwargs": {
+              "sharpness": [0.5, 1.5]
+            },
+            "weight": 1
+          },
+          "brightness": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "brightness": [0.8, 1.2]
+            },
+            "weight": 1
+          },
+          "saturation": {
+            "type": "ColorJitter",
+            "kwargs": {
+              "saturation": [0.5, 1.5]
+            },
+            "weight": 1
+          }
+        },
+        "random_order": false,
+        "max_num_transforms": 3
+      },
+      "use_imagenet_stats": true
+    },
+    "env": null,
+    "output_dir": ".",
+    "use_explicit": false,
+    "use_implicit": false,
+    "future_obj": "none",
+    "use_slot_att": "none",
+    "n_exp_toks_view": null,
+    "job_name": ".",
+    "resume": false,
+    "seed": 42,
+    "num_workers": 8,
+    "batch_size": 20,
+    "steps": 100000,
+    "eval_freq": 20000,
+    "log_freq": 200,
+    "save_checkpoint": true,
+    "save_freq": 20000,
+    "use_policy_training_preset": true,
+    "optimizer": {
+      "type": "adamw",
+      "lr": 0.0001,
+      "weight_decay": 1e-10,
+      "grad_clip_norm": 10.0,
+      "betas": [0.9, 0.95],
+      "eps": 1e-08
+    },
+    "scheduler": {
+      "type": "cosine_decay_with_warmup",
+      "num_warmup_steps": 1000,
+      "num_decay_steps": 240000,
+      "peak_lr": 0.0001,
+      "decay_lr": 2.5e-06
+    },
+    "eval": {
+      "n_episodes": 50,
+      "batch_size": 50,
+      "use_async_envs": false
+    },
+    "wandb": {
+      "enable": true,
+      "disable_artifact": true,
+      "project": "pi0_lerobot",
+      "entity": "Robotics_VLA",
+      "notes": null,
+      "run_id": null,
+      "mode": "online"
+    }
+  }
+  

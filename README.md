@@ -7,8 +7,8 @@
   </picture>
 </p>
 
-[![ArXiv](https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg)](https://arxiv.org/abs/2606.20867)
 [![Website](https://img.shields.io/badge/🌐%20Project%20Page-FOCA-green)](https://focavla.github.io/)
+[![ArXiv](https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg)](https://arxiv.org/abs/2606.20867)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Model-HuggingFace-blue)](https://huggingface.co/collections/vrfai/foca-models)
 
 
